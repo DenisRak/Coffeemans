@@ -19,7 +19,7 @@
 общепринятым стандартам написания проектов на python
 общепринятому стилю
 
-Запуск.
+Запуск в терминале:
 
 `python main.py --files math.csv physics.csv programming.csv --report median-coffee`
 
