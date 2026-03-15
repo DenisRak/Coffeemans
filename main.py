@@ -2,7 +2,7 @@ import argparse
 import csv
 import statistics as st
 from collections import defaultdict
-from functools import partial
+
 
 from tabulate import tabulate
 
