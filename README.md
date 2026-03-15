@@ -19,3 +19,11 @@
 общепринятым стандартам написания проектов на python
 общепринятому стилю
 
+Запуск.
+
+`python main.py --files math.csv physics.csv programming.csv --report median-coffee`
+
+или
+
+`python main.py --files math.csv physics.csv programming.csv --report mean-coffee `
+
