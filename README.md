@@ -27,3 +27,4 @@
 
 `python main.py --files math.csv physics.csv programming.csv --report mean-coffee `
 
+![image](screen.png)
