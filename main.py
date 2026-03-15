@@ -2,8 +2,6 @@ import argparse
 import csv
 import statistics as st
 from collections import defaultdict
-
-
 from tabulate import tabulate
 
 
