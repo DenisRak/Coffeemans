@@ -50,8 +50,8 @@ def calculate_median_coffee(students: list, func=st.median) -> list:
         results.append({'student': student, f'{func_name}_coffee': round(res, 2)})
 
     results.sort(key=lambda x: -x[f'{func_name}_coffee']) # сортировка по убыванию
-
-    return results + [func_name]
+    results = results + [func_name] if results else []
+    return results
 
 
 def generate_report(results):
