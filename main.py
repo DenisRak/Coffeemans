@@ -54,7 +54,7 @@ def calculate_median_coffee(students: list, func=st.median) -> list:
     return results
 
 
-def generate_report(results):
+def generate_report(results: list):
     """ Формирование и вывод отчета в виде таблицы """
     if not results:
         print("Нет данных для формирования отчета")
