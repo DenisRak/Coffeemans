@@ -19,11 +19,14 @@
 общепринятым стандартам написания проектов на python
 общепринятому стилю
 
-Запуск в терминале:
+Запуск в терминале: Согласно ТЗ - отчет по медианной сумме
 
 `python main.py --files math.csv physics.csv programming.csv --report median-coffee`
 
 или
+
+Добавил от себя: отчет по средней сумме
+
 
 `python main.py --files math.csv physics.csv programming.csv --report mean-coffee `
 
