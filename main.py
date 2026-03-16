@@ -15,7 +15,7 @@ def parse_arguments():
     return parser.parse_args()
 
 
-def read_student_data(files: list) -> list:
+def read_student_data(files: list[str]) -> list:
     """Чтение данных из всех файлов. Возвращает список словарей сгруппированный по student """
     grouped_data = defaultdict(lambda: defaultdict(list))
     result = []
@@ -42,11 +42,11 @@ def read_student_data(files: list) -> list:
 
 def calculate_median_coffee(students: list, func=st.median) -> list:
     """Расчет медианных трат на кофе для каждого студента"""
+    func_name = func.__name__
     results = []
     for stud in students:
         student = stud['student']
         res = func(map(float, stud['coffee_spent']))
-        func_name = func.__name__
         results.append({'student': student, f'{func_name}_coffee': round(res, 2)})
 
     results.sort(key=lambda x: -x[f'{func_name}_coffee']) # сортировка по убыванию
@@ -74,6 +74,7 @@ def main():
         print("Не удалось прочитать данные из указанных файлов")
         return
     # Проверяем, что запрошен правильный тип отчета
+    results = []
     if args.report == 'median-coffee':
         results = calculate_median_coffee(students) # Рассчитываем медианные траты
     elif args.report == 'mean-coffee':
