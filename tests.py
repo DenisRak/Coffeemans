@@ -107,7 +107,7 @@ def test_calculate_median_coffee(student_data, expected_medians):
     """Тест расчета медианных значений"""
     result = calculate_median_coffee(student_data, func=st.median)
 
-    assert len(result[:-1]) == 3
+    assert len(result) == 4
     assert result[:-1] == expected_medians
 
 
