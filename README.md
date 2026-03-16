@@ -27,4 +27,8 @@
 
 `python main.py --files math.csv physics.csv programming.csv --report mean-coffee `
 
+Запуск тестов: `pytest tests.py -v -s`
+
+Покрытия: `pytest tests.py --cov=main --cov-report=term-missing`
+
 ![image](screen.png)
