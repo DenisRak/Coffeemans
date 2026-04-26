@@ -7,7 +7,7 @@ from tabulate import tabulate
 
 def parse_arguments():
     """Парсинг аргументов командной строки"""
-    parser = argparse.ArgumentParser(description='Анализ трат студентов на кофе')
+    parser = argparse.ArgumentParser(description='Анализ трат студентов')
     parser.add_argument('--files', nargs='+', required=True,
                         help='Список файлов с данными')
     parser.add_argument('--report', required=True,
